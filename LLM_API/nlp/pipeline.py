@@ -3,7 +3,7 @@ from .ner import extract_entities
 from .tfidf import TfidfSearch
 from .intent import classify_intent
 
-def load_chunks(path="training_data.txt", chunk_size=500):
+def load_chunks(path="LLM_API\training_data.txt", chunk_size=500):
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
     return [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
