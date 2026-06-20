@@ -4,7 +4,8 @@ from nlp.pipeline import run_pipeline
 from llm.generator import generate_answer
 
 # Get token from Streamlit Secrets
-HF_TOKEN = st.secrets["HF_TOKEN"]
+# HF_TOKEN = st.secrets["HF_TOKEN"]
+HF_TOKEN = "wertyuiopasdfghjkzxcvbnm"
 
 # Login to Hugging Face
 login(HF_TOKEN)
